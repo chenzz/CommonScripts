@@ -1,21 +1,8 @@
 # CommonScripts
 Some useful scripts.
 
-## 一、search.py
+## 一、convert.sh
 ### 1.1 说明
-该脚本用于在制定目录及其子目录中递归查找**含有关键字的文件**
-
-### 1.2 使用
-```
-python search.py directory_path keyword
-```
-
-### 1.3 对应博文
-http://blog.csdn.net/timberwolf_2012/article/details/43816899
-
-
-## 二、convert.sh
-### 2.1 说明
 
 该Shell脚本用于将**Windows下可用源码**转换为**Linux下可用源码**。
 
@@ -23,9 +10,15 @@ Windows下编写的代码（如C\C++\Java等）放到Linux下不能直接编译�
  1. Windows和Linux的行尾符不同， Windows下行尾符是"\n\r"， 而Linux的行尾符是"\n"
  2. Windows下编码通常是GB2312, 而Linux中的编码通常是UTF-8。
 
-### 2.2 使用
+### 1.2 使用
+
+使用之前
 ```
 sudo apt-get install dos2unix
+```
+
+使用
+```
 bash trans.sh 指定文件夹 要转换文件的拓展名
 ```
 
@@ -34,5 +27,5 @@ bash trans.sh 指定文件夹 要转换文件的拓展名
 bash trans.sh /home java
 ```
 
-### 2.3 对应博文
+### 1.3 对应博文
 http://blog.csdn.net/timberwolf_2012/article/details/38980201
